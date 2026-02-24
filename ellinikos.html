@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Η Ιστορία του Ελληνικού Καφέ</title>
+    <style>
+        :root {
+            --copper: #b87333;
+            --dark-bean: #3d2b1f;
+            --sand: #d2b48c;
+            --bg-paper: #fdf5e6;
+            --border-ink: #2c1e1a;
+        }
+
+        body {
+            font-family: 'Constantia', 'Georgia', serif;
+            background-color: #e0d7c6;
+            color: var(--dark-bean);
+            line-height: 1.8;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .cafe-container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: var(--bg-paper);
+            padding: 50px;
+            border: 8px double var(--border-ink);
+            box-shadow: 0 0 30px rgba(0,0,0,0.2);
+            position: relative;
+        }
+
+        .cafe-container::before {
+            content: "";
+            position: absolute;
+            top: 10px; left: 10px; right: 10px; bottom: 10px;
+            border: 1px solid var(--border-ink);
+            pointer-events: none;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .monogram {
+            font-size: 3em;
+            color: var(--copper);
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin: 0;
+            border-bottom: 2px solid var(--copper);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .intro {
+            font-style: italic;
+            text-align: center;
+            margin-top: 20px;
+            font-size: 1.1em;
+        }
+
+        h2 {
+            font-family: Arial, sans-serif;
+            font-size: 1.3em;
+            background: var(--dark-bean);
+            color: white;
+            padding: 5px 15px;
+            display: inline-block;
+        }
+
+        .history-section {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .timeline-card {
+            border-bottom: 1px dashed var(--border-ink);
+            padding-bottom: 15px;
+        }
+
+        .timeline-card strong {
+            color: var(--copper);
+            font-size: 1.1em;
+        }
+
+        .tradition-box {
+            background-color: var(--sand);
+            background-opacity: 0.3;
+            padding: 30px;
+            margin-top: 30px;
+            border-radius: 5px;
+            border: 1px solid var(--dark-bean);
+        }
+
+        .hovoli-tag {
+            float: right;
+            background: var(--copper);
+            color: white;
+            padding: 5px 10px;
+            font-size: 0.8em;
+            transform: rotate(3deg);
+            font-weight: bold;
+        }
+
+        ul {
+            list-style-type: "◈";
+            padding-left: 20px;
+        }
+
+        ul li {
+            padding-left: 10px;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            margin-top: 50px;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 0.85em;
+            color: #777;
+        }
+
+        .celebration-badge {
+            display: block;
+            margin: 20px auto;
+            border: 2px solid var(--copper);
+            padding: 10px;
+            width: fit-content;
+            font-weight: bold;
+            color: var(--copper);
+        }
+    </style>
+</head>
+<body>
+
+<div class="cafe-container">
+    <header>
+        <span class="monogram">☕</span>
+        <h1>Ο Ελληνικός Καφές</h1>
+        <p class="intro">Μια παράδοση αιώνων, από τη χόβολη των Βεδουίνων στο καθημερινό μας φλιτζάνι.</p>
+    </header>
+
+    <section class="history-section">
+        <h2>Ιστορική Αναδρομή</h2>
+        
+        <div class="timeline-card">
+            <strong>Προέλευση:</strong> Οι Βεδουίνοι της Μέσης Ανατολής ήταν οι πρώτοι που έψηναν τον καφέ στην άμμο (χόβολη). Η συνήθεια αυτή πέρασε στην Οθωμανική Αυτοκρατορία και ρίζωσε στην Ελλάδα κατά την Τουρκοκρατία.
+        </div>
+
+        <div class="timeline-card">
+            <strong>Διάδοση:</strong> Τον 17ο και 18ο αιώνα εμφανίζονται τα πρώτα καφενεία στην Κωνσταντινούπολη και τη Θεσσαλονίκη. Στην Αθήνα, η συνήθεια εξαπλώνεται γύρω στο 1760.
+        </div>
+
+        <div class="timeline-card">
+            <strong>Μετονομασία (1974):</strong> Μέχρι τα μέσα του 20ου αιώνα, ονομαζόταν «τούρκικος». Η ονομασία «ελληνικός» καθιερώθηκε αργότερα, με αποκορύφωμα μετά το 1974, ως ισχυρή έκφραση πολιτιστικής ταυτότητας.
+        </div>
+
+        <div class="timeline-card">
+            <strong>Τα Πρώτα Καφεκοπτεία:</strong> Την περίοδο 1910-1920, θρυλικά ονόματα όπως οι <strong>Μισεγιάννης-Μάστορης</strong> και ο <strong>Λουμίδης</strong> αντικατέστησαν τη χειροκίνητη μέθοδο, φέρνοντας το επαγγελματικό καβούρδισμα και άλεσμα.
+        </div>
+    </section>
+
+    <section class="tradition-box">
+        <span class="hovoli-tag">ΠΑΡΑΔΟΣΙΑΚΗ ΧΟΒΟΛΗ</span>
+        <h3>Χαρακτηριστικά & Τελετουργία</h3>
+        <ul>
+            <li><strong>Παρασκευή:</strong> Ψήνεται αργά σε μπρίκι, ιδανικά πάνω σε άμμο με κάρβουνα (χόβολη) για ομοιόμορφη θέρμανση και πλούσιο καϊμάκι.</li>
+            <li><strong>Σερβίρισμα:</strong> Πάντα με ένα κρύο ποτήρι νερό, λουκούμι ή παραδοσιακό γλυκό του κουταλιού.</li>
+            <li><strong>Κοινωνικός Ρόλος:</strong> Το καφενείο υπήρξε για αιώνες το κέντρο της κοινωνικής ζωής, του διαλόγου και της φιλοξενίας.</li>
+        </ul>
+    </section>
+
+    <div class="celebration-badge">
+        📅 1η ΟΚΤΩΒΡΙΟΥ: ΗΜΕΡΑ ΕΛΛΗΝΙΚΟΥ ΚΑΦΕ
+    </div>
+
+    <footer>
+        <p>Απόσπασμα από την ιστορία της ελληνικής καθημερινότητας.</p>
+    </footer>
+</div>
+
+</body>
+</html>
