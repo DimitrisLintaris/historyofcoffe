@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Τεχνικός Οδηγός: Ρύθμιση Μύλου Άλεσης</title>
+    <style>
+        :root {
+            --tech-blue: #2c3e50;
+            --alert-orange: #e67e22;
+            --light-grey: #ecf0f1;
+            --dark-grey: #34495e;
+            --border-color: #bdc3c7;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: var(--dark-grey);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .manual-container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            padding: 40px;
+            border: 1px solid var(--border-color);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+
+        header {
+            border-bottom: 4px solid var(--tech-blue);
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        h1 {
+            color: var(--tech-blue);
+            font-size: 1.8em;
+            text-transform: uppercase;
+            margin: 0;
+        }
+
+        .version-tag {
+            font-size: 0.8em;
+            background: var(--light-grey);
+            padding: 5px 10px;
+            border-radius: 3px;
+        }
+
+        .intro-block {
+            font-style: italic;
+            background: var(--light-grey);
+            padding: 20px;
+            border-left: 5px solid var(--tech-blue);
+            margin-bottom: 30px;
+        }
+
+        h2 {
+            color: var(--tech-blue);
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 5px;
+            margin-top: 40px;
+        }
+
+        .variables-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .variable-card {
+            padding: 15px;
+            border: 1px solid var(--border-color);
+            background: #fff;
+        }
+
+        .warning {
+            background-color: #fff3e0;
+            border: 1px solid var(--alert-orange);
+            color: #d35400;
+            padding: 15px;
+            margin: 20px 0;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 0.9em;
+        }
+
+        .step-box {
+            background: #fdfdfd;
+            border: 1px solid #eee;
+            padding: 20px;
+            margin-bottom: 15px;
+        }
+
+        .button-list {
+            background: var(--tech-blue);
+            color: white;
+            padding: 25px;
+            border-radius: 5px;
+            column-count: 2;
+        }
+
+        .display-instructions {
+            background: #e1f5fe;
+            padding: 20px;
+            border-radius: 5px;
+            border: 1px solid #b3e5fc;
+        }
+
+        .important {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+
+        .highlight {
+            color: #c0392b;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="manual-container">
+    <header>
+        <h1>Ο Μύλος Άλεσης</h1>
+        <span class="version-tag">Barista Training Manual</span>
+    </header>
+
+    <div class="intro-block">
+        Ο μύλος άλεσης αποτελεί έναν από τους πιο σημαντικούς συνεργάτες ενός barista. Ο συχνός καθαρισμός του (κάθε περίπου δέκα κιλά καφέ), καθώς και η ρύθμιση του αρκετές φορές μέσα στην βάρδια και η συνεχή παρακολούθηση του είναι απαραίτητα για την παρασκευή ενός καλού espresso.
+    </div>
+
+    <section>
+        <p>Η ποιότητα του καφέ είναι άρρηκτα συνδεδεμένη με τον μύλο, καθώς είναι αυτός που καθορίζει τις δύο από τις τρείς μεταβλητές της συνταγής μας, την <strong>ποσότητα</strong> και το <strong>χρόνο εκχύλισης</strong>. Ο καφές είναι επιρρεπής σε αλλαγές στη θερμοκρασία καθώς και την υγρασία, όποτε έχουμε μεταβολές σε αυτά τα δύο σίγουρα θα έχουμε μεταβολές και στο χρόνο εκχύλισης αλλά και στη ποσότητα αλεσμένου καφέ.</p>
+        
+        <p>Όταν κάνουμε κάποια παρέμβαση στο μύλο μας πάντα επηρεάζουμε μόνο μια από τις δύο μεταβλητές (το πάχος της άλεσης του καφέ ή την ποσότητα αλεσμένου καφέ).</p>
+    </section>
+
+    <section>
+        <h2>Διαδικασία Ρύθμισης Άλεσης</h2>
+        <div class="step-box">
+            <p>Για τη ρύθμιση του μύλου πάντα ζυγίζουμε την επιθυμητή δόση καφέ <span class="important">(16,5gr)</span>, αν δεν είναι η επιθυμητή αφαιρούμε ή προσθέτουμε καφέ ανάλογα, εκχυλίζουμε μια δόση διπλού espresso και παρακολουθούμε το χρόνο που χρειάστηκε.</p>
+            
+            <ul>
+                <li><span class="highlight">Χοντροκομμένος καφές:</span> Εκχύλιση κάτω από 24’’ δευτερόλεπτα. Αποτέλεσμα: καφές όξινος, ελαφρώς αλμυρός και πολύ δυνατός.</li>
+                <li><span class="highlight">Λεπτοκομμένος καφές:</span> Εκχύλιση πάνω από 26’’ δευτερόλεπτα. Αποτέλεσμα: καφές πικρός και στυφός.</li>
+            </ul>
+        </div>
+
+        <div class="variables-grid">
+            <div class="variable-card">
+                <h3>Προς το Fine (Λεπτό)</h3>
+                <p>Περιστρέφουμε το περιλαίμιο ρύθμισης <strong>αντίθετα με τη φορά των δεικτών του ρολογιού</strong>. Αυξάνουμε το χρόνο επαφής του νερού με τον καφέ.</p>
+                <div class="warning">ΠΡΟΣΟΧΗ: Οι αλλαγές πρέπει να είναι διακριτικές, ένα ‘’δοντάκι’’ τη φορά.</div>
+            </div>
+            <div class="variable-card">
+                <h3>Προς το Coarse (Χοντρό)</h3>
+                <p>Περιστρέφουμε το περιλαίμιο ρύθμισης <strong>με τη φορά των δεικτών του ρολογιού</strong>. Μειώνουμε το χρόνο επαφής του νερού με τον καφέ.</p>
+                <div class="warning">ΠΡΟΣΟΧΗ: Οι αλλαγές πρέπει να είναι διακριτικές, ένα ‘’δοντάκι’’ τη φορά.</div>
+            </div>
+        </div>
+
+        <p><em>Σημείωση:</em> Οποιαδήποτε αλλαγή κάνουμε θα φανεί μετά τη δεύτερη διπλή δόση καθώς ο μύλος κρατάει μια ποσότητα καφέ στο εσωτερικό.</p>
+    </section>
+
+    <section>
+        <h2>Ρύθμιση Ποσότητας (Δοσολογία)</h2>
+        <p>Μετά την οποιαδήποτε αλλαγή πρέπει να ζυγίσουμε και να ρυθμίσουμε τη ποσότητα που αλέθει ο μύλος μας, αν αυτό είναι απαραίτητο, εφόσον έχουμε ρυθμίσει το μύλο στο επιθυμητό κόψιμο. Η ρύθμιση της ποσότητας καφέ που αλέθει ο μύλος γίνεται <strong>με βάση το χρόνο</strong>. Ρυθμίζουμε το μύλο μας να δουλέψει για ‘’Χ’’ δευτερόλεπτα ώστε να μας δώσει στο συγκεκριμένο πάχος άλεσης τα 16,5 γραμμάρια που θέλουμε.</p>
+    </section>
+
+    <section>
+        <h3>Πάνελ Λειτουργιών</h3>
+        <ol class="button-list">
+            <li>Μονή δόση</li>
+            <li>Διπλή δόση</li>
+            <li>Χειροκίνητο κόψιμο</li>
+            <li>Menu</li>
+            <li>Μείωση χρόνου άλεσης</li>
+            <li>Αύξηση χρόνου άλεσης</li>
+            <li>Οθόνη</li>
+        </ol>
+    </section>
+
+    <section>
+        <h2>Οδηγίες Προγραμματισμού Οθόνης</h2>
+        <div class="display-instructions">
+            <p>Έχοντας ρυθμίσει το κόψιμο του καφέ ρυθμίζουμε τις δόσεις, ο μύλος μετράει χρόνο όχι όγκο.</p>
+            <ol>
+                <li>Κρατάμε πατημένο το κουμπί του <strong>menu</strong> για μερικά δευτερόλεπτα.</li>
+                <li>Στην οθόνη εμφανίζονται τέσσερις παύλες που αναβοσβήνουν <strong>(----)</strong>.</li>
+                <li>Πατάμε το κουμπί με τη δόση που θέλουμε να ρυθμίσουμε (μονή ή διπλή).</li>
+                <li>Εμφανίζεται ο τρέχων χρόνος (π.χ. 4.95΄΄).</li>
+                <li>Με το κουμπί <strong>«+»</strong> αυξάνουμε το χρόνο (βήμα 0.05΄΄). Κάθε βήμα αυξάνει τη δόση κατά 0.2-0.3γρ περίπου.</li>
+                <li>Κρατάμε πάλι πατημένο το κουμπί <strong>menu</strong> για αποθήκευση.</li>
+            </ol>
+            <p>Τέλος, πατάμε τη δόση που ρυθμίσαμε και ζυγίζουμε. Στόχος: <strong>16.5γρ. η διπλή</strong> και <strong>7.0-7.5γρ. η μονή</strong>. Αν έχουμε αποκλείσεις επαναλαμβάνουμε μέχρι να πετύχουμε το επιθυμητό αποτέλεσμα.</p>
+        </div>
+    </section>
+
+    <footer style="margin-top: 40px; text-align: center; font-size: 0.8em; border-top: 1px solid #eee; padding-top: 10px;">
+        Εγχειρίδιο Τεχνικής Υποστήριξης & Ρύθμισης Εξοπλισμού Espresso.
+    </footer>
+</div>
+
+</body>
+</html>
