@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Στιγμιαίος & Φραπέ: Μια Ιστορία Γεμάτη Ενέργεια</title>
+    <style>
+        :root {
+            --dark-coffee: #1a0f0a;
+            --frappe-gold: #c69c6d;
+            --paper: #f9f7f2;
+            --accent-red: #ae2012;
+            --military-olive: #588157;
+        }
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #d8d8d8;
+            margin: 0;
+            padding: 20px;
+            color: var(--dark-coffee);
+            line-height: 1.7;
+        }
+
+        .magazine-wrapper {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--paper);
+            padding: 60px;
+            box-shadow: 0 0 50px rgba(0,0,0,0.2);
+            border: 1px solid #ccc;
+        }
+
+        header {
+            text-align: center;
+            border-bottom: 5px double var(--dark-coffee);
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 0;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        .sub-header {
+            font-family: Arial, sans-serif;
+            font-size: 1.1em;
+            color: var(--accent-red);
+            font-weight: bold;
+            letter-spacing: 3px;
+        }
+
+        .columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .dropcap {
+            float: left;
+            font-size: 5em;
+            line-height: 0.7;
+            padding: 5px 10px 0 0;
+            color: var(--dark-coffee);
+        }
+
+        /* Military Section */
+        .war-dispatch {
+            background-color: #eceee9;
+            border: 2px solid var(--military-olive);
+            padding: 20px;
+            margin: 20px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 0.95em;
+        }
+
+        .war-dispatch h4 {
+            color: var(--military-olive);
+            margin-top: 0;
+            text-transform: uppercase;
+        }
+
+        /* Timeline Styling */
+        .timeline {
+            border-left: 3px solid var(--frappe-gold);
+            padding-left: 20px;
+            margin: 30px 0;
+        }
+
+        .timeline-item {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .year-tag {
+            background: var(--dark-coffee);
+            color: white;
+            padding: 2px 8px;
+            font-family: Arial, sans-serif;
+            font-size: 0.8em;
+            font-weight: bold;
+        }
+
+        /* Frappe Section */
+        .frappe-feature {
+            background-color: var(--dark-coffee);
+            color: var(--paper);
+            padding: 40px;
+            margin-top: 40px;
+            border-radius: 5px;
+        }
+
+        .frappe-feature h2 {
+            color: var(--frappe-gold);
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        .quote-box {
+            font-style: italic;
+            border-left: 4px solid var(--frappe-gold);
+            padding-left: 20px;
+            margin: 20px 0;
+            font-size: 1.2em;
+        }
+
+        .lentzos-badge {
+            display: inline-block;
+            background: var(--accent-red);
+            color: white;
+            padding: 5px 15px;
+            transform: rotate(-2deg);
+            font-weight: bold;
+            margin: 15px 0;
+        }
+
+        .specialty-section {
+            grid-column: span 2;
+            background: #fff;
+            border: 1px solid #ddd;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 800px) {
+            .columns { grid-template-columns: 1fr; }
+            .magazine-wrapper { padding: 20px; }
+            h1 { font-size: 2em; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="magazine-wrapper">
+    <header>
+        <div class="sub-header">ΑΡΧΕΙΟ ΠΟΛΙΤΙΣΜΟΥ ΚΑΦΕ</div>
+        <h1>Η Εκπληκτική Ιστορία του Στιγμιαίου</h1>
+        <p>Από τα πεδία των μαχών του 18ου αιώνα, στη "χρυσή" τυχαία ανακάλυψη της Θεσσαλονίκης.</p>
+    </header>
+
+    <div class="columns">
+        <section>
+            <span class="dropcap">Η</span> ιστορία του στιγμιαίου καφέ δεν είναι πρόσφατη. Παρότι συνδέθηκε με τη μοντέρνα ζωή, οι ρίζες του ανάγονται αιώνες πίσω. Η πρώτη καταγραφή εφεύρεσης εντοπίζεται στη <strong>Βρετανία το 1771</strong>, πέντε χρόνια πριν την Αμερικανική Επανάσταση. 
+            
+            <p>Ωστόσο, ο καφές έγινε πραγματικό εργαλείο επιβίωσης κατά τον Αμερικανικό Εμφύλιο και αργότερα στον <strong>Β’ Παγκόσμιο Πόλεμο</strong>. Ο λυοφιλοποιημένος καφές κέρδισε τεράστια δημοτικότητα καθώς δεν απαιτούσε εξοπλισμό, παρά μόνο νερό.</p>
+
+            <div class="war-dispatch">
+                <h4>Σημειώσεις Μετώπου</h4>
+                Στον Εμφύλιο των ΗΠΑ, ο στιγμιαίος καφές παρασκευαζόταν ως <strong>«πειραματική μορφή κέικ»</strong>. Οι στρατιώτες τον έθρυβαν για να φτιάξουν το ρόφημά τους όταν δεν βρίσκονταν στο πεδίο της μάχης.
+            </div>
+        </section>
+
+        <section>
+            <h3>Οι Πρωτοπόροι της Σκόνης</h3>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="year-tag">1890</span>
+                    <strong>David Strang:</strong> Ο Νεοζηλανδός που πατένταρε τη «διαδικασία ξηρού ζεστού αέρα».
+                </div>
+                <div class="timeline-item">
+                    <span class="year-tag">1901</span>
+                    <strong>Satori Kato:</strong> Ο χημικός από το Σικάγο που δημιούργησε την πρώτη σταθερή σκόνη χρησιμοποιώντας τεχνική στιγμιαίου τσαγιού.
+                </div>
+                <div class="timeline-item">
+                    <span class="year-tag">1909</span>
+                    <strong>G. Washington:</strong> Ο άνθρωπος που κατάφερε τη πρώτη μαζική εμπορική επιτυχία με τον <em>Red E Coffee</em>.
+                </div>
+                <div class="timeline-item">
+                    <span class="year-tag">1937</span>
+                    <strong>Max Morgenthaler:</strong> Ο επιστήμονας της Nestlé που τελειοποίησε τη μέθοδο, δημιουργώντας τον <strong>Nescafe</strong> μετά από αίτημα της Βραζιλίας για το πλεόνασμα της παραγωγής της.
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="frappe-feature">
+        <h2>Η Ελληνική Επανάσταση: ΦΡΑΠΕ</h2>
+        <p>Ενώ ο κόσμος έπινε ζεστό στιγμιαίο, το <strong>1957 στη Διεθνή Έκθεση Θεσσαλονίκης</strong>, η ιστορία γράφτηκε τυχαία. Ο Γιάννης Δρίτσας παρουσίαζε ένα παιδικό σοκολατούχο ρόφημα σε σέικερ.</p>
+        
+        <div class="quote-box">
+            «Μου λέρωσε το κοστούμι, αλλά έτσι γεννήθηκε ο φραπές!» <br>
+            <small>— Δημήτρης Βακόνδιος, ο εφευρέτης του Φραπέ.</small>
+        </div>
+
+        <p>Ο Βακόνδιος, μην βρίσκοντας ζεστό νερό για τον καφέ του, αυτοσχεδίασε χρησιμοποιώντας το σέικερ, κρύο νερό και στιγμιαίο καφέ. Το αποτέλεσμα; Ένας πλούσιος αφρός που έμοιαζε με αναψυκτικό. Το όνομα προέρχεται από το γαλλικό <strong>frappé</strong> (χτυπημένος).</p>
+
+        <div class="lentzos-badge">Ο ΘΡΥΛΟΣ ΤΟΥ ΛΕΝΤΖΟΥ (1965)</div>
+        <p>Στο Παγκράτι, ο Χρήστος Λέντζος απογείωσε τη συνταγή. Η καινοτομία του; Μια επιπλέον κουταλιά καφέ <em>πάνω</em> από τον έτοιμο αφρό, δημιουργώντας μια γεύση τόσο δυνατή που έγινε μονοπώλιο για δεκαετίες. Παρόλο που ο καφές ήταν "αφιλτράριστος" και βαρύς, οι Έλληνες εθίστηκαν στην κουλτούρα του.</p>
+    </div>
+
+    <div class="specialty-section">
+        <h3>21ος Αιώνας: Η Μεταμόρφωση σε Specialty</h3>
+        <p>Μετά από 70 χρόνια ως "καφές της γιαγιάς", ο στιγμιαίος επαναπροσδιορίζεται. Από το 2010, μάρκες όπως η <strong>Sudden Coffee</strong> και η <strong>Voila</strong> έφεραν τον στιγμιαίο στον κόσμο του specialty coffee. Σήμερα, καταξιωμένοι roasters όπως η <strong>Black & White</strong> και η <strong>Verve</strong> προσφέρουν single origin στιγμιαίο καφέ, ενώ η <strong>Intelligentsia</strong> σερβίρει αποκλειστικά στιγμιαίο σε εξειδικευμένα coffee bars στο Λος Άντζελες.</p>
+        <p>Είτε πλυμένος, είτε φυσικής επεξεργασίας, είτε πειραματικής αναερόβιας παρτίδας, ο στιγμιαίος καφές πλέον δεν έχει να ζηλέψει τίποτα από την ποιότητα ενός φρεσκοκομμένου εσπρέσο.</p>
+    </div>
+
+    <footer style="text-align: center; margin-top: 50px; border-top: 1px solid #ddd; padding-top: 20px;">
+        <p><strong>Συνολική Ιστορία:</strong> Από το 1771 στην Αγγλία, στο 1957 στη Θεσσαλονίκη και στο 2026 της Specialty απόλαυσης.</p>
+    </footer>
+</div>
+
+</body>
+</html>
